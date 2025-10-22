@@ -1,39 +1,38 @@
-Feature Engineering & Data Preprocessing
+# Feature Engineering & Data Preprocessing
 
-This repository demonstrates core feature engineering and preprocessing techniques in machine learning. These steps prepare raw data to improve model performance and learning efficiency.
+This repository demonstrates core **feature engineering and preprocessing techniques** in machine learning. These steps prepare raw data to improve model performance and learning efficiency.
 
-Techniques Covered
+---
 
-Binning (Discretization)
+## Techniques Covered
 
-Converts continuous numeric data into discrete categories (bins).
+### 1. Binning (Discretization)
+- Converts continuous numeric data into discrete categories (bins).  
+- **Example:** `Age → Teen / Adult / Senior`.
 
-Example: Age → Teen / Adult / Senior.
+### 2. Transforming
+- Changes feature distribution or scale to reduce skewness or outliers.  
+- **Common Transformations:**  
+  - `Log` → Reduce effect of large outliers  
+  - `Square Root` → Reduce skewness  
+  - `Box-Cox / Yeo-Johnson` → Make data more normal  
+  - `Normalization` → Scale values between 0–1
 
-Transforming
+### 3. Encoding
+- Converts categorical data into numeric form for ML models.  
+- **Types:**  
+  - **Label Encoding** → Ordered categories  
+  - **One-Hot Encoding** → Independent categories  
+  - **Binary / Target Encoding** → High-cardinality categories
 
-Changes feature distribution or scale to reduce skewness or outliers.
+### 4. Scaling
+- Standardizes feature ranges to ensure no feature dominates.  
+- **Methods:**  
+  - `Min-Max Scaling`  
+  - `Standardization (Z-score)`  
+  - `Robust Scaling`
 
-Examples: Log, Square Root, Box-Cox, Yeo-Johnson, Normalization.
+### 5. Shuffling
+- Randomly rearranges data to remove order bias and improve generalization.
 
-Encoding
-
-Converts categorical data into numeric form for ML models.
-
-Types:
-
-Label Encoding (ordered categories)
-
-One-Hot Encoding (independent categories)
-
-Binary / Target Encoding (high-cardinality categories)
-
-Scaling
-
-Standardizes feature ranges to ensure no feature dominates.
-
-Methods: Min-Max Scaling, Standardization (Z-score), Robust Scaling.
-
-Shuffling
-
-Randomly rearranges data to remove order bias and improve generalization.
+---
